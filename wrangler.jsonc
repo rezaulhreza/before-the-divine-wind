@@ -1,0 +1,6 @@
+{
+  // Static site on Cloudflare Workers. Deploy with: npx wrangler deploy
+  "name": "before-the-divine-wind",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "." }
+}

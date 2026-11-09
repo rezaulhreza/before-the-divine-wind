@@ -1,0 +1,13 @@
+# Files in the repository that are not part of the site.
+.git
+.gitignore
+.assetsignore
+.wrangler
+node_modules
+tools
+docs
+README.md
+LICENSE
+serve.py
+package.json
+wrangler.jsonc
