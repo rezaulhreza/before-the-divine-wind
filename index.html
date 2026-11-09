@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Before the Divine Wind</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.js", "three/addons/": "./vendor/jsm/" } }
+</script>
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="hurt"></div>
+<div id="flash"></div>
+
+<div id="hud">
+  <div id="objective"><span class="mark"></span><span class="text"></span></div>
+  <div id="marker"><span class="dia"></span><span class="dist"></span></div>
+  <div id="boss"><div class="name"></div><div class="bar"><i></i></div></div>
+  <div id="vitals">
+    <div class="hp"><i></i></div>
+    <div class="resolve"><b></b><b></b><b></b></div>
+    <div id="stealth"></div>
+  </div>
+  <div id="hint"></div>
+  <div id="prompt"><kbd></kbd><span></span></div>
+</div>
+
+<div id="bars"><div class="bar top"></div><div class="bar bottom"></div></div>
+<div id="subs"><div class="who"></div><p class="line"></p></div>
+<div id="fade"></div>
+<div id="card"><div class="kanji"></div><div class="big"></div><div class="small"></div></div>
+<div id="choice"></div>
+<div id="skip">Hold Enter to skip</div>
+
+<div id="title">
+  <div class="kanji">神風の前</div>
+  <div class="block">
+    <h1>Before the<br>Divine Wind</h1>
+    <p class="sub">Iki Island, 1274. A tale of honour and shadow.</p>
+    <button id="begin" disabled>Preparing the island…</button>
+    <ul class="controls">
+      <li><kbd>W A S D</kbd> move</li>
+      <li><kbd>Mouse</kbd> look</li>
+      <li><kbd>Left click</kbd> strike</li>
+      <li><kbd>F</kbd> heavy strike</li>
+      <li><kbd>Right click</kbd> block, parry</li>
+      <li><kbd>Space</kbd> dodge</li>
+      <li><kbd>Shift</kbd> run</li>
+      <li><kbd>C</kbd> crouch</li>
+      <li><kbd>E</kbd> act</li>
+      <li><kbd>R</kbd> heal</li>
+    </ul>
+    <p class="note">Japanese voices, English subtitles. Best with headphones. About fifteen minutes.</p>
+  </div>
+</div>
+
+<div id="pause">
+  <div class="inner">
+    <div class="k">間</div>
+    <p>Paused</p>
+    <p class="small">Click to return</p>
+  </div>
+</div>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

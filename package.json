@@ -1,0 +1,9 @@
+{
+  "name": "before-the-divine-wind",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "A cinematic Three.js samurai adventure set on Iki Island, 1274.",
+  "scripts": { "start": "python3 serve.py 5173" }
+}
